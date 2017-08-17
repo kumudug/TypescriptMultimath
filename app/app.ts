@@ -1,6 +1,12 @@
 function startGame() {
-    var messageElement = document.getElementById('messages');
-    messageElement.innerText = 'Welcome to MultiMath! Starting new game...';
+    var playerName: string = 'Audrey';
+    logPlayer(playerName);
+    let messageElement: HTMLElement | null = document.getElementById('messages');
+    messageElement!.innerText = 'Welcome to MultiMath! Starting new game...';
 }
 
-document.getElementById('startGame').addEventListener('click', startGame);
+function logPlayer(name: string) {
+    console.log(`New game string for player: ${name}`);
+}
+
+document.getElementById('startGame')!.addEventListener('click', startGame);
