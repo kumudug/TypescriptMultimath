@@ -2,7 +2,9 @@
     "extends": "../tsconfig.base",
     "compilerOptions": {
         "removeComments": true,
-        "outFile": "../js/app.js"
+        "module": "commonjs",//"module": "ES2015",
+        "moduleResolution": "node",
+        "traceResolution": true //shows the locations searched to find modules in output
     },
     // "include": [
     //     "./**/*.ts"

@@ -19,5 +19,8 @@
   "homepage": "https://github.com/kumudug/TypescriptMultimath#readme",
   "devDependencies": {
     "http-server": "^0.10.0"
+  },
+  "dependencies": {
+    "systemjs": "^0.20.17"
   }
 }
