@@ -1,15 +1,38 @@
+// {
+//     "extends": "../tsconfig.base",
+//     "compilerOptions": {
+//         "removeComments": true,
+//         //"module": "commonjs",
+//         "module": "es2015",
+//         "moduleResolution": "node",
+//         "traceResolution": true, //shows the locations searched to find modules in output
+//         "baseUrl": ".",
+//         "paths": {
+//             "*": [
+//                 "app/*"
+//             ]
+//         }
+//     },
+//     "exclude": [
+//         "node_modules/*",
+//         "**/*-aot.ts"
+//     ]
+//     // "include": [
+//     //     "./**/*.ts"
+//     // ]
+//     // "files": [
+//     //     "app.ts"
+//     // ]
+// }
+
 {
-    "extends": "../tsconfig.base",
     "compilerOptions": {
-        "removeComments": true,
-        "module": "commonjs",//"module": "ES2015",
-        "moduleResolution": "node",
-        "traceResolution": true //shows the locations searched to find modules in output
-    },
-    // "include": [
-    //     "./**/*.ts"
-    // ]
-    "files":[
-        "app.ts"
-    ]
-}
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react",
+      "allowJs": true
+    }
+  }

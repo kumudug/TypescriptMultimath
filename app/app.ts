@@ -3,13 +3,13 @@
 /// <reference path="game.ts" />
 */
 
-import {Player} from './player';
-import {Game}from './game';
+import { Player } from './player';
+import { Game } from './game';
 import * as Helpers from './utils';
 
 let newGame: Game;
 
-document.getElementById('startGame')!.addEventListener('click', ()=>{
+document.getElementById('startGame')!.addEventListener('click', () => {
     let player: Player = new Player();
     player.name = Helpers.getValue('playername');
 
@@ -21,6 +21,6 @@ document.getElementById('startGame')!.addEventListener('click', ()=>{
 });
 
 
-document.getElementById('calculate')!.addEventListener('click', ()=>{
+document.getElementById('calculate')!.addEventListener('click', () => {
     newGame.calculateScore();
 });

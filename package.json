@@ -5,6 +5,9 @@
   "main": "index.js",
   "scripts": {
     "start": "http-server",
+    "build": "webpack",
+    "srv": "webpack-dev-server --bail",
+    "srv:watch": "webpack-dev-server --bail --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,9 +21,14 @@
   },
   "homepage": "https://github.com/kumudug/TypescriptMultimath#readme",
   "devDependencies": {
-    "http-server": "^0.10.0"
+    "awesome-typescript-loader": "^3.2.3",
+    "http-server": "^0.10.0",
+    "ts-loader": "^2.3.3",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
   },
   "dependencies": {
-    "systemjs": "^0.20.17"
+    "core-js": "^2.5.0"
   }
 }
