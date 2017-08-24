@@ -8,8 +8,13 @@ module.exports = {
         'polyfills': './app/polyfills.ts',
         'app': './app/app.ts'
     },
+    devServer: {
+        contentBase: './'
+    },
     output: {
         path: path.resolve(__dirname, 'js'),//__dirname + './js',
+        //path: helpers.root('dist'),
+        publicPath: 'http://localhost:8080/js/',
         filename: '[name].js'
     },
     resolve: {

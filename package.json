@@ -6,7 +6,7 @@
   "scripts": {
     "start": "http-server",
     "build": "webpack",
-    "srv": "webpack-dev-server --bail",
+    "srv": "webpack-dev-server --inline --progress --port 8080",
     "srv:watch": "webpack-dev-server --bail --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
